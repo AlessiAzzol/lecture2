@@ -1,0 +1,5 @@
+{
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": false,
+    "python.pythonPath": "c:\\Users\\azzol\\GitProjects\\lecture2\\env\\Scripts\\python.exe",
+}

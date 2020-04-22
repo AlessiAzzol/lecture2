@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My webpage</title>
+	</head>
+	<body> 
+		{% if new_year %}
+			<h1>Yes, happy new year!!</h1>
+		{% else %}
+			<h1>No, today is not new year's day</h1>
+		{% endif %}
+
+		{% extends "layout.html" %}
+
+		{% block heading %}
+			First page
+		{% endblock %}
+		{% block body %}
+		<p>Proviamo questa espressione</p>
+		<a href="{{ url_for('more') }}">See more...</a>
+		<form action="{{ url_for('name') }}" method="POST">
+			<br>
+			<input type="text" name="name" placeholder="Enter your name">
+			<button>Submit</button>
+		{% endblock %}
+		</form>
+	</body>
+</html>
+ 
